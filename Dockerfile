@@ -57,7 +57,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 RUN locale-gen en_US.UTF-8
 
-ENV CODE_VERSION="1.939-vsc1.33.1"
+ENV CODE_VERSION="2.1523-vsc1.38.1"
 RUN curl -sL https://github.com/codercom/code-server/releases/download/${CODE_VERSION}/code-server${CODE_VERSION}-linux-x64.tar.gz | tar --strip-components=1 -zx -C /usr/local/bin code-server${CODE_VERSION}-linux-x64/code-server
 
 # Setup User
